@@ -89,7 +89,7 @@ if(isset($_POST['tquat']) && $_POST['tquat']=="tquat")
 					<a href="#" onclick="adm_chuyentrang('quanlycay')">Quản Lý Quần Áo</a>
 					<a href="#" onclick="adm_chuyentrang('quanlydondathang')">Quản Lý Đơn Đặt Hàng</a>
 					<a href="#" onclick="adm_chuyentrang('quanlykhachhang')">Quản Lý Khách Hàng</a>
-					<a href="#" onclick="adm_chuyentrang('quanlyadmin')">Quản Lý Admin</a>
+					<a href="#" onclick="adm_chuyentrang('quanlyadmin')">Quản Lý Nhân Viên</a>
 					<a href="#" onclick="adm_chuyentrang('quanlytintuc')">Quản Lý Tin Tức</a>
 					<a href="#" onclick="adm_chuyentrang('quanlylienhe')">Quản Lý Liên Hệ</a>
 			</div>
@@ -100,7 +100,7 @@ if(isset($_POST['tquat']) && $_POST['tquat']=="tquat")
 				<br />
 				Chào: <?php echo $_SESSION['hovatenad'] ;?>
 				<br />
-				Quyền Hạn:<font color="#666666"><?php if($_SESSION['phanquyen']=='admin') echo "Admin"; else echo "Quản Trị Viên"; ?></font>
+				Quyền Hạn:<font color="#666666"><?php if($_SESSION['phanquyen']=='admin') echo " Quản Trị Viên"; else echo " Nhân Viên"; ?></font>
 				<br />
 				<a href="#" onclick="tquattaikquan('tquat')">Thoát Tài Khoản</a>
 			</p>

@@ -83,7 +83,7 @@ function sua_admin()
 	$strSQL="UPDATE adm SET mat_khau='{$matkhau}',ho='{$quadmin}',ten='{$tenadmin}',gioi_tinh='{$gioitinh}' WHERE ma_adm={$maadmin}";
 	mysqli_query($ung,$strSQL);
 	
-	return "Đã Sửa Thành Công Thông Tin Tài KHoản Này!";
+	return "Đã Sửa Thành Công Thông Tin Tài Khoản Này!";
 }
 
 //in thong bao
@@ -99,7 +99,7 @@ echo "<p class='pp'><center><span style='color:#FF9900;'>{$thongbao}</span>";
 echo "<br />";
 echo "<br />";
 ?>
-<center><a href="#" onclick="adm_chuyentrang('quanlyadmin')">Bấm Vào Đây Để Về Trang Quản Lý Admin</a></center>
+<center><a href="#" onclick="adm_chuyentrang('quanlyadmin')">Bấm Vào Đây Để Về Trang Quản Lý Nhân Viên</a></center>
 <?php
 echo "</p>";
 echo "</td>";
